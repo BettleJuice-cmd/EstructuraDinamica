@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnPila = new System.Windows.Forms.Button();
+            this.btnPila2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPila
@@ -41,16 +42,28 @@
             this.btnPila.UseVisualStyleBackColor = true;
             this.btnPila.Click += new System.EventHandler(this.btnPila_Click);
             // 
+            // btnPila2
+            // 
+            this.btnPila2.Location = new System.Drawing.Point(83, 234);
+            this.btnPila2.Name = "btnPila2";
+            this.btnPila2.Size = new System.Drawing.Size(130, 63);
+            this.btnPila2.TabIndex = 1;
+            this.btnPila2.Text = "Pila 2";
+            this.btnPila2.UseVisualStyleBackColor = true;
+            this.btnPila2.Click += new System.EventHandler(this.btnPila2_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPila2);
             this.Controls.Add(this.btnPila);
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Dinamicas";
+            this.Load += new System.EventHandler(this.FrmInicio_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPila;
+        private System.Windows.Forms.Button btnPila2;
     }
 }
 

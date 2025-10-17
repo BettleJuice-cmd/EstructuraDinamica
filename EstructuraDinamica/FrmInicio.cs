@@ -22,5 +22,15 @@ namespace EstructuraDinamica
         {
             new FrmPila().Show();
         }
+
+        private void btnPila2_Click(object sender, EventArgs e)
+        {
+            new Pila2().Show();
+        }
+
+        private void FrmInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

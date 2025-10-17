@@ -57,12 +57,17 @@ namespace EstructuraDinamica.Formularios
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                MessageBox.Show($"{pila.Peek()}", "Ultimo elemento ingresado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            
-            pila.Peek();
-            lblPila.Text = pila.Peek()
-            
-            lblPila.Text = MostrarElementos();
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Pila vacia", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
 
 
         }
